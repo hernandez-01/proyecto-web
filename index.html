@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Turismo</title>
 
-    <!-- Favicon -->
     <link rel="icon" href="img/favicon.png">
 
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
 
-<!-- 🔹 MENÚ DE NAVEGACIÓN -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg custom-navbar"></nav>-->
+<nav class="navbar navbar-expand-lg custom-navbar align-items-center">
   <div class="container">
-    <a class="navbar-brand" href="#">Turismo</a>
+    <a class="navbar-brand" href="#">Explora El Salvador</a>
 
     <!-- Botón hamburguesa -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -27,28 +28,25 @@
     <div class="collapse navbar-collapse" id="menu">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="senderismo.html">senderismo</a></li>
-        <li class="nav-item"><a class="nav-link" href="playa.html">playa</a></li>
         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- 🔹 CARRUSEL -->
 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
 
     <div class="carousel-item active">
-      <img src="img/img1.jpg" class="d-block w-100" alt="Imagen 1">
+      <img src="img/img4.png" class="d-block w-100" alt="Imagen 1">
     </div>
 
     <div class="carousel-item">
-      <img src="img/img2.jpg" class="d-block w-100" alt="Imagen 2">
+      <img src="img/img2.png" class="d-block w-100" alt="Imagen 2">
     </div>
 
     <div class="carousel-item">
-      <img src="img/img3.jpg" class="d-block w-100" alt="Imagen 3">
+      <img src="img/img3.png" class="d-block w-100" alt="Imagen 3">
     </div>
 
   </div>
@@ -69,7 +67,7 @@
   <div class="row">
     <!-- Imagen izquierda -->
     <div class="col-md-5">
-      <img src="img/destino.jpg" class="img-fluid rounded" alt="">
+      <img src="img/destino.png" class="img-fluid rounded" alt="">
     </div>
 
     <!-- Texto derecha -->
@@ -85,20 +83,24 @@
   <!-- 🔹 SECCIÓN DE 3 ELEMENTOS -->
   <div class="row text-center mt-5">
 
-    <div class="col-md-4">
-      <img src="img/lugar1.jpg" class="rounded-circle mb-3" width="150">
-      <h5>Playa</h5>
-      <p>Disfruta del sol y el mar.</p>
-    </div>
+<div class="col-md-4 text-center">
+  <a href="playa.html">
+    <img src="img/playa.png" class="rounded-circle mb-3" width="150">
+  </a>
+  <h5>Playa</h5>
+  <p>Disfruta del sol y el mar.</p>
+</div>
 
-    <div class="col-md-4">
-      <img src="img/lugar2.jpg" class="rounded-circle mb-3" width="150">
+    <div class="col-md-4" text-center>
+      <a href="senderismo.html">
+      <img src="img/montaña.png" class="rounded-circle mb-3" width="150">
+      </a>
       <h5>Montaña</h5>
       <p>Aventura en la naturaleza.</p>
     </div>
 
     <div class="col-md-4">
-      <img src="img/lugar3.jpg" class="rounded-circle mb-3" width="150">
+      <img src="img/ciudad.png" class="rounded-circle mb-3" width="150">
       <h5>Ciudad</h5>
       <p>Descubre la vida urbana.</p>
     </div>
@@ -108,7 +110,7 @@
 </div>
 
 <!-- 🔹 FOOTER -->
-<footer class="bg-dark text-white text-center p-3">
+<footer class="footer-custom text-center p-3">
   <p>© 2026 Turismo</p>
   <p> Compañero1 - carnet </p>
   <p> Compañero2 - carnet </p>

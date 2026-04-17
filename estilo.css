@@ -1,0 +1,95 @@
+/* 🎨 Paleta renovada */
+:root {
+  --azul-claro: #A7D8F2;   /* cielo */
+  --azul-profundo: #1E3D59; /* mar/montaña */
+  --verde-suave: #88C999;   /* naturaleza */
+  --verde-oscuro: #2F5233;  /* bosque */
+  --arena: #F2E8CF;         /* tierra */
+  --acento: #F28C28;        /* sol/energía */
+}
+
+/* Fondo general */
+body {
+  background-color: var(--arena);
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--azul-profundo);
+}
+
+/* 🔹 Navbar */
+.custom-navbar {
+  background-color: var(--azul-claro);
+  padding: 30px 0;
+}
+.navbar-brand {
+  color: var(--azul-profundo);
+  font-weight: bold;
+}
+.navbar-nav .nav-link {
+  color: var(--azul-profundo);
+  margin: 5px;
+  padding: 10px;
+}
+.navbar-nav .nav-link:hover {
+  background-color: var(--verde-suave);
+  border-radius: 5px;
+  color: white;
+}
+
+/* 🔹 Carrusel */
+.carousel img {
+  height: 450px; /* más grande */
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* 🔹 Contenido */
+h2 {
+  color: var(--verde-oscuro);
+  margin-bottom: 15px;
+}
+p {
+  color: #444;
+}
+
+/* 🔹 Botón */
+.btn-custom {
+  background-color: var(--acento);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.btn-custom:hover {
+  background-color: #d97706;
+}
+
+/* 🔹 Tarjetas */
+.custom-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 15px;
+  border: 1px solid #e0e0e0;
+  transition: transform 0.2s ease;
+}
+.custom-card:hover {
+  background-color: var(--azul-claro);
+  transform: translateY(-5px);
+}
+
+/* 🔹 Imágenes */
+.rounded-circle {
+  border: 3px solid var(--verde-suave);
+}
+
+/* 🔹 Footer */
+.footer-custom {
+  background-color: var(--azul-claro);
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  color: var(--azul-profundo);
+  font-weight: 500;
+}
