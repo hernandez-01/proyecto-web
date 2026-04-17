@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora El Salvador</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="estilo_p3.css"/>
+</head>
+<body>
+    <nav id="menu-principal" class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-triangle"></i>
+                Explora El Salvador
+            </a>
+
+    <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu-nav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu-nav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="playa.html">Inicio</a>
+            </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Senderismo</a>
+    </li>
+        </ul>
+    </div>
+        </div>
+    </nav>
+
+    <section id="bienvenida">
+        <div class="container">
+            <p id="subtitulo">Rutas y Senderismo</p>
+            <h1 id="titulo">Conquista las montañas de El Salvador</h1>
+            <p id="descripcion">
+                Descubre volcanes, cerros y senderos únicos en el corazón de El Salvador. 
+                Rutas para todo publico, desde nivel principiante, medio y avanzado.
+            </p>
+            <a href="#destinos" id="hero-btn" class="btn">Explorar rutas</a>
+        </div>
+        <div id="montañas"></div>
+    </section>
+
+    <section id="galeria" class="container my-5">
+    <h2 class="text-center mb-4">Destinos destacados</h2>
+    <div id="carrusel-principal" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button data-bs-target="#carrusel-principal" data-bs-slide-to="0" class="active"></button>
+            <button data-bs-target="#carrusel-principal" data-bs-slide-to="1"></button>
+            <button data-bs-target="#carrusel-principal" data-bs-slide-to="2"></button>
+        </div>
+        <!--Diapositiva -->
+    <div class="carousel-inner">
+
+    <!--Diapositiva 1-->
+    <div class="carousel-item active">
+        <div class="imagen-diapositiva">
+            <img src="img/v1.jpg">
+        </div>
+        <div class="info-diapositiva">
+        <h3 >Volcan de Santa Ana <span class="badge altitud">2,381 msnm</span></h3>
+        <p>El volcán activo más alto de El Salvador, con una laguna cratérica de color turquesa única en
+  Centroamérica.</p>
+  <div class="etiquetas">
+    <span class="badge">8 horas</span>
+    <span class="badge">Avanzado</span>
+    <span class="badge">Guia obligatorio</span>
+  </div>
+    </div>
+    </div>
+
+    <!--Diapositiva 2-->
+    <div class="carousel-item">
+    <div class="imagen-diapositiva">
+        <img src="img/pital.jpg">
+    </div>
+    <div class="info-diapositiva">
+    <h3>Cerro el Pital <span class="badge altitud">2,730 msnm</span></h3>
+    <p>El punto más alto de El Salvador, en la frontera con Honduras. Ideal para acampar y ver el
+  amanecer.</p>
+    <div class="etiquetas">
+        <span class="badge">6 horas</span>
+        <span class="badge">Intermedio</span>
+        <span class="badge">Permite camping</span>
+    </div>
+    </div>
+    </div>
+
+        <!--Diapositiva 3-->
+    <div class="carousel-item">
+    <div class="imagen-diapositiva">
+        <img src="img/v2.jpg">
+    </div>
+    <div class="info-diapositiva">
+    <h3>Volcan de Izalco<span class="badge altitud">1,910 msnm</span></h3>
+    <p>Conocido como el "Faro del Pacífico", uno de los volcanes más jóvenes y activos de América</p>
+    <div class="etiquetas">
+        <span class="badge">5 horas</span>
+        <span class="badge">Intermedio</span>
+        <span class="badge">Vista al mar</span>
+    </div>
+    </div>
+    </div>
+    </div><!--fin carousel inner-->
+
+    <button class="carousel-control-prev" data-bs-target="#carrusel-principal" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" data-bs-target="#carrusel-principal" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div><!--fin del carrosel-->
+    </section>
+
+    <section id="destinos" class="container my-5">
+        <h2 class="text-center mb-4">Más rutas de senderismo</h2>
+        <div class="row">
+
+            <!--Tarjeta 1: Parque el imposible-->
+    <div class="col-md-4 mb-4">
+        <div class="tarjeta-destino card h-100">
+            <!--imagen de la tarjeta-->
+            <div class="imagen-tarjeta">
+                <img src="img/imp.jpg">
+            </div>
+            <!--Contenido de la tarjeta-->
+            <div class="card-body">
+                <span class="badge etiqueta-categoria mb-2">Senderismo</span>
+                <h5 class="card-title">Parque nacional El Imposible</h5>
+                <p class="datos-lugar">
+                    <i class="bi- bi-geo-alt"></i>Chalatenango  
+                    &nbsp;|&nbsp;
+                    <i class="bi bi-bar-chart"></i> 1,425 msnm
+                </p>
+
+                <p class="card-text">El parque natural más grande de El Salvador, ideal para senderismo, 
+        observación de fauna y disfrutar de cascadas en un bosque tropical.</p>
+            </div>
+        </div>
+    </div>
+                <!--Tarjeta 2: Espiritu de la montaña-->
+    <div class="col-md-4 mb-4">
+        <div class="tarjeta-destino card h-100">
+            <!--imagen de la tarjeta-->
+            <div class="imagen-tarjeta">
+                <img src="img/esp.jpg">
+            </div>
+            <!--Contenido de la tarjeta-->
+            <div class="card-body">
+                <span class="badge etiqueta-categoria mb-2">Camping</span>
+                <h5 class="card-title">Espíritu de la Montaña</h5>
+                <p class="datos-lugar">
+                    <i class="bi- bi-geo-alt"></i>La Union  
+                    &nbsp;|&nbsp;
+                    <i class="bi bi-bar-chart"></i> 1,225 msnm
+                </p>
+
+                <p class="card-text">Mirador natural con vistas espectaculares al Golfo de Fonseca, ideal para fotografías y disfrutar del amanecer.</p>
+            </div>
+        </div>
+    </div>
+                <!--Tarjeta 1: callejon del diablo-->
+    <div class="col-md-4 mb-4">
+        <div class="tarjeta-destino card h-100">
+            <!--imagen de la tarjeta-->
+            <div class="imagen-tarjeta">
+                <img src="img/cd.jpg">
+            </div>
+            <!--Contenido de la tarjeta-->
+            <div class="card-body">
+                <span class="badge etiqueta-categoria mb-2">Senderismo</span>
+                <h5 class="card-title">Callejón del Diablo</h5>
+                <p class="datos-lugar">
+                    <i class="bi- bi-geo-alt"></i>Panchimalco 
+                    &nbsp;|&nbsp;
+                    <i class="bi bi-bar-chart"></i> 850 msnm
+                </p>
+
+                <p class="card-text">Formación rocosa con senderos estrechos y vistas impresionantes, rodeado de leyendas locales y naturaleza.</p>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </section>
+
+      <!-- DATOS IMPORTANTES (Tips para el visitante) -->
+  <section id="datos-importantes" class="my-5">
+    <div class="container">
+
+      <h2 class="text-center mb-4">Información para senderistas</h2>
+
+      <div class="row">
+
+        <!-- Tarjeta 1: Mejor época -->
+        <div class="col-md-6 mb-4">
+          <div class="tarjeta-info">
+            <div class="icono-info">
+              <i class="bi bi-sun"></i>
+            </div>
+            <div class="texto-info">
+              <h5>Mejor época</h5>
+              <p>Noviembre a abril. Clima seco ideal para recorrer los senderos.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2: Dificultad -->
+        <div class="col-md-6 mb-4">
+          <div class="tarjeta-info">
+            <div class="icono-info">
+              <i class="bi bi-activity"></i>
+            </div>
+            <div class="texto-info">
+              <h5>Dificultad</h5>
+              <p>Rutas desde nivel familiar hasta avanzado para los más experimentados.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3: Seguridad -->
+        <div class="col-md-6 mb-4">
+          <div class="tarjeta-info">
+            <div class="icono-info">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <div class="texto-info">
+              <h5>Seguridad</h5>
+              <p>Guías certificados y policía de turismo disponibles en todas las rutas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4: Qué llevar -->
+        <div class="col-md-6 mb-4">
+          <div class="tarjeta-info">
+            <div class="icono-info">
+              <i class="bi bi-backpack"></i>
+            </div>
+            <div class="texto-info">
+              <h5>Qué llevar</h5>
+              <p>Agua, bloqueador solar, botas de trekking y ropa abrigada para las cumbres.</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- fin row -->
+
+    </div>
+  </section>
+
+  <footer id="pie-de-pagina">
+    <div class="container">
+        <div class="fila-superior row align-items-center py-3">
+            <div class="col-md-6">
+                <p class="logo-pie">
+                    <i class="bi bi-triangle">Visita nuestras redes sociales</i>
+                </p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#" class="icono-red"><i class="bi bi-facebook"></i></a>
+                 <a href="#" class="icono-red"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="icono-red"><i class="bi bi-twitter"></i></a>
+            </div>
+            
+        </div>
+        <hr class="linea-divisora"/>
+        <div class="fila-inferior text-center py-2">
+        <p>© 2026 Explora El Salvador — Todos los derechos reservados</p>
+        <p>Desarrollado por: Gerardo Josué Hernández Zepeda — Carnet: 25-1886-2024</p>
+        <p>Desarrollado por: Katherine Pamela Cruz Hernández — Carnet: 25-2364-2024</p>
+        <p>Desarrollado por:  — Carnet: </p>
+        <p>Desarrollado por:  — Carnet: </p>
+        <p>Desarrollado por:  — Carnet: </p>
+
+      </div>
+    </div>
+  </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
